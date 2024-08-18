@@ -1,10 +1,238 @@
-body {
+* {
     margin: 0;
     padding: 0;
 }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/background_os.jpg);
+    display: flex;
+    justify-content: center;
+}
 
 #content {
-width: 100vw;
-height: 100vh;
-background-color: #c50101;
+    backdrop-filter: blur(7px);
+    width: 80vw;
+    height: 80vh;
+    margin: 40px;
+    border-radius: 25px;
+    box-shadow: -1px 4px 20px 13px black;
+    overflow: hidden;
+    background-image: url(img/list.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-position-x: left;
+}
+.content {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+   padding-top: 40px;
+   align-items: center;
+}
+.Coffee {
+    color: rgb(231, 156, 59);
+    background: linear-gradient(16deg, #ffffff, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.this{
+    color: rgb(196, 255, 127);
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(16deg, #ffffff, #ffffff);
+    background-clip: text;
+    text-shadow: 3px -2px 3px #2f2109;
+}
+
+.nameCoffee {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(16deg, #ffffff, #ffffff);
+    background-clip: text;
+    text-shadow: 1px 0px 1px #2f2109;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 50px;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.headText {
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 3px 5px #5f320c;
+    font-size: 50px;
+
+}
+.headText:hover {
+    scale: 1.03;
+}
+.headTextL {
+    display: flex;
+    text-shadow: 2px 3px 5px #5f320c;
+    font-size: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+.menu {
+    background-image: url(img/3506m.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 241px;
+    height: 122px;
+    border-radius: 17px;
+    box-shadow: 14px 19px 18px 2px black;
+
+}
+
+.contacts {
+    background-image: url(img/contacts.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 241px;
+    height: 122px;
+    border-radius: 17px;
+    box-shadow: 14px 19px 18px 2px black;
+}
+.contacts:hover {
+    scale: 1.05;
+}
+.menu:hover {
+    scale: 1.05;
+}
+
+.coffeeItems {
+    display: flex;
+    gap: 50px;
+    margin-top: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.coffeeItems div {
+    display: flex;
+    flex-direction: column;
+    color: #ffdaba;
+    width: 140px;
+    position: relative;
+    align-items: center;
+}
+.coffeeItems div:hover {
+    transform: scale(1.1);
+}
+.coffeeItems h2 {
+    color: #c2ffe9;
+    padding: 3px;
+    padding-inline: 5px;
+
+}
+.Espresso {
+    height: 201px;
+    background-image: url(img/espresso.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.Cappucino {
+    height: 201px;
+    background-image: url(img/cappucino.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.Tonic {
+    height: 201px;
+    min-width: 144px;
+    background-image: url(img/tonic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+.priceCoffee {
+    position: absolute;
+    top: 229px;
+
+    width: max-content;
+    background-image: linear-gradient(85deg, black, #ff6d0b);
+    border-radius: 15px;
+   padding-inline: 5px;
+    text-align: center;
+ 
+}
+.basket {
+    width: 300px;
+    background-color:#140c048f;
+    color: wheat;
+    border: none;
+    border-radius: 15px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 10px;
+}
+.basketList {
+    font-size: 20px;
+    width: 300px;
+    background-color: #140c048f;
+    color: wheat;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding-inline: 10px;
+}
+.basketList h3 {
+    padding-block: 5px;
+}
+.basketContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buyButton {
+    width: 300px;
+    background-color: #140c04d4;
+    color: #ffc963;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+.buyButton:hover {
+    scale: 1.1;
+}
+
+@media (max-width:900px) {
+    .coffeeItems {
+        gap: 0px
+    }
+}
+@media (max-width:720px) {
+    .coffeeItems {
+        overflow: hidden;
+        overflow-x: scroll;
+        height: 299px;
+        display: flex;
+        flex-direction: row;
+        width: 174px;
+        gap: 50px;
+    }
+    .basket {
+        margin-top: 0px;
+    }
+}
+@media (max-width:590px) {
+    .headText{
+        font-size: 30px;
+    }
 }
