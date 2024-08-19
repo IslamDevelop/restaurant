@@ -105,11 +105,32 @@ ul {
     border-radius: 17px;
     box-shadow: 14px 19px 18px 2px black;
 }
+.about{
+    background-image: url(img/about.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 241px;
+    height: 122px;
+    border-radius: 17px;
+    box-shadow: 14px 19px 18px 2px black;
+}
+.about:hover{
+    scale: 1.05;
+}
 .contacts:hover {
     scale: 1.05;
 }
 .menu:hover {
     scale: 1.05;
+}
+.AboutText {
+    font-size: 40px;
+    margin-top: 106px;
+    color: #efc97e;
+    max-width: 438px;
+    padding-inline: 10px;
+    background: linear-gradient(45deg, #5f0000, transparent);
+    border-radius: 20px;
 }
 
 .coffeeItems {
@@ -209,6 +230,48 @@ ul {
     font-size: 25px;
 }
 .buyButton:hover {
+    scale: 1.1;
+}
+
+
+.contactsItem {
+    font-size: 60px;
+    margin-top: 100px;
+    text-decoration: none;
+    background-image: url(img/hive.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    border-radius: 104px;
+    box-shadow: 2px 2px 20px 14px #26ff9b;
+animation-name: ladno;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+@keyframes ladno {
+    0% {
+        scale: 1;
+    }
+    50%{
+        border-radius: 80px;
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.HiveText {
+    font-size: 50px;
+    color: #000000;
+    margin-top: 221px;
+    text-align: center;
+    background: linear-gradient(1deg, #00df97, transparent);
+    border-radius: 29px;
+    text-shadow: -3px -1px 4px white;
+  
+ 
+}
+.HiveText:hover {
     scale: 1.1;
 }
 

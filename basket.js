@@ -6,14 +6,19 @@ export class Basket {
     addBasket(coffeeBasket) {
         this.basketItem.push(coffeeBasket)
         this.displayBasket()
-        
-        
+    }
+
+    removeBasket(){
+        this.basketItem = []
+
     }
     displayBasket(){
         let result = 0
         let itemName = ''
         let itemPrice = 0
-        
+        const basketMenu = document.querySelector('.basket')
+        basketMenu.textContent = 'Korzuna'
+
         this.basketItem.forEach((item,) => {
             this._finishPrice = parseInt(item._price.replace(/[a-zA-Z/$]/g,''))
             result =  this._finishPrice + result
@@ -25,7 +30,6 @@ export class Basket {
         console.log(result)
         
         const itemBasket = document.createElement('h3')
-        const basketMenu = document.querySelector('.basket')
         
         basketMenu.textContent = `Итого: ${result} $`
         const basketList = document.querySelector('.basketList')
