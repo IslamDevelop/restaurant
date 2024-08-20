@@ -210,6 +210,8 @@ ul {
     border-radius: 15px;
     text-align: center;
     padding-inline: 10px;
+    height: 160px;
+    overflow: overlay;
 }
 .basketList h3 {
     padding-block: 5px;
@@ -279,6 +281,11 @@ animation-iteration-count: infinite;
     .coffeeItems {
         gap: 0px
     }
+    .basketList {
+        height: 100px;
+        overflow: overlay;
+    }
+    
 }
 @media (max-width:720px) {
     .coffeeItems {
@@ -292,6 +299,22 @@ animation-iteration-count: infinite;
     }
     .basket {
         margin-top: 0px;
+    }
+    .menu {
+        width: 186px;
+        height: 93px;
+    }
+    .contacts {
+        width: 186px;
+        height: 93px;
+    }
+    .about{
+        width: 186px;
+        height: 93px;
+    }
+    .basketList {
+        height: 85px;
+        overflow: overlay;
     }
 }
 @media (max-width:590px) {
